@@ -24,7 +24,7 @@
 
 3. The algorithm for determining the match between source tiles and the target image.
 
-    - For each division in process 2, I get its average color. And to get the tile with the best match, I compute the difference between `colors` matrix and the expected color, in the form of a row vector.
+    - For each division in process 2, I get its average color. And to get the tile with the best match, I compute the difference between `colors` row vector and the expected color, in the form of a row vector.
 
     - Then I obtain the Euclidean norm of each row using formula: <img src="https://render.githubusercontent.com/render/math?math=\sqrt{\text{red_diff}^2 %2B \text{green_diff}^2 %2B \text{blue_diff}^2}">
 
@@ -37,8 +37,20 @@
 
           For my results, I'm using a hard limit of 5.
 
-
 ## Results
+
+### Impact of Tile Sizes
+
+Smaller tile size make the photo mosaic more realistically resembles the target image, but meanwhile loses some artistic effects. Larger tile size does the exact opposite.
+
+| | |
+:-------------------------:|:-------------------------:
+Target Image | Tile Size 75
+![man.jpg](src/man.jpg)  |  ![man-75.jpg](dst/man-75.jpg)
+Tile Size 50 | Tile Size 25
+![man-50.jpg](dst/man-50.jpg)  |  ![man-25.jpg](dst/man-25.jpg)
+
+### All 5 Images
 
 Target Image             |  Mosaic
 :-------------------------:|:-------------------------:
