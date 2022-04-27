@@ -17,6 +17,14 @@
       1. If `width` and `height` is divisible by `tile_size`, then there are `width / tile_size` columns and `height / tile_size` rows of tiles.
       2. If `width` or `height` is not divisible by `tile_size`, then some margins less than `tile_size` will be kept.
 
+        <details><summary>View Graph</summary>
+        <p>
+
+        <div>Hidden graph</div>
+
+        </p>
+        </details>
+
 3. The algorithm for determining the match between source tiles and the target image.
 
     - For each division in process 2, I get its average color. And to get the tile with the best match, I compute the difference between `colors` matrix and the expected color, in the form of a row vector.
