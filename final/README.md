@@ -16,20 +16,11 @@
     Tiles are evenly divided. There are two cases:
       1. If `width` and `height` is divisible by `tile_size`, then there are `width / tile_size` columns and `height / tile_size` rows of tiles.
 
+          <img src="img/aligned-tiles.png" width="200px" />
+
       2. If `width` or `height` is not divisible by `tile_size`, then some margins less than `tile_size` will be kept.
 
-          <details><summary>View Graph</summary>
-          <div>
-            <div style="display: flex;">
-              <div style="flex: 0 1 auto; width: 2em; height: 2em; background: #888; border: solid 1px black;">
-              </div>
-              <div style="flex: 0 1 auto; width: 2em; height: 2em; background: #888; border: solid 1px black; border-left: 0px;">
-              </div>
-              <div style="flex: 0 1 auto; width: 2em; height: 2em; background: #888; border: solid 1px black; border-left: 0px;">
-              </div>
-            </div>
-          </div>
-          </details>
+          <img src="img/misaligned-tiles.png" width="240px" />
 
 3. The algorithm for determining the match between source tiles and the target image.
 
