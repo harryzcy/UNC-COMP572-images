@@ -37,6 +37,17 @@
 
           For my results, I'm using a hard limit of 5.
 
+
+## Results
+
+Target Image             |  Mosaic
+:-------------------------:|:-------------------------:
+![man.jpg](src/man.jpg)  |  ![man-75.jpg](dst/man-75.jpg)
+![cat.jpg](src/cat.jpg)  |  ![cat-75.jpg](dst/cat-75.jpg)
+![car.jpg](src/car.jpg)  |  ![car-75.jpg](dst/car-75.jpg)
+![mountain.jpg](src/mountain.jpg)  |  ![mountain-75.jpg](dst/mountain-75.jpg)
+![pingpong.jpg](src/pingpong.jpg)  |  ![pingpong-75.jpg](dst/pingpong-75.jpg)
+
 ## Sources
 
 | image | source |
