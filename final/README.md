@@ -28,7 +28,7 @@
 
     - Then I obtain the Euclidean norm of each row using formula: <img src="https://render.githubusercontent.com/render/math?math=\sqrt{\text{red_diff}^2 %2B \text{green_diff}^2 %2B \text{blue_diff}^2}">
 
-    - Among all Euclidean norms, I find the smallest one and use the corresponding image for that tile.
+    - Among all Euclidean norms, I find a smallest one and use the corresponding image for that tile.
 
 4. Improvements:
 
@@ -36,6 +36,8 @@
         - I introduced the randomness by limiting the number of times that the same tile can appear.
 
           For my results, I'm using a hard limit of 5.
+
+        - When finding the appropriate tile using the Euclidean norms, I get the five smallest ones and randomly pick one of them.
 
 ## Results
 
